@@ -53,11 +53,19 @@ h1 {
 	font-size: 48px;
 }
 
-h2 {
+h2, .modal {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-style: italic;
-	font-size: 26px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h2 span {
+  color: #dddddd;
+  font-family: 'Slabo 27px', serif;
 }
 
 .next-quote {
@@ -75,4 +83,14 @@ h2 {
 
 .logo:hover {
 	text-decoration:none;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+::selection {
+  background-color: #f84342;
 }
