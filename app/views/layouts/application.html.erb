@@ -42,8 +42,8 @@
           <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
         </div>
         <%= simple_form_for Quote.new do |f| %>
-        <div class="modal-body">
-            <%= f.input :saying, :label => "What is the saying you want to add?", :placeholder => "Leadnow is the best! Happy happy doge doge" %>
+        <div class="modal-body col-xs-12">
+			<%= f.input :saying, as: :text, :label => "What is the saying you want to add?", :placeholder => "Leadnow is the best! Happy happy doge doge" %>
             <br />
             <%= f.input :author, :label => "When was this said?", :placeholder => "Month Year"%>
         </div>
