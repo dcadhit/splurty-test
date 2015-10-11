@@ -2,9 +2,11 @@
 
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
 
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+
 .top {
-  background: #f2f2f2; 
-  color: #fff; 
+  padding-top: 22px;
+  color: #f2f2f2;
 }
 
 body {
@@ -42,7 +44,7 @@ body {
   color: #E4B883;
 	font-size: 25px;
 	border-bottom: 1px dotted #dfdfdf;
-	font-family: 'arvo', sans-serif;
+	font-family: 'Arvo', sans-serif;
 	font-weight: bold;
 }
 
@@ -79,7 +81,7 @@ h2 p {
 
 .next-quote {
 	color: #E4B883;
-	font-family: 'arvo', serif;
+	font-family: 'Arvo', serif;
 	font-size: 20px;
 }
 
