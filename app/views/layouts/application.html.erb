@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leadnow Feels</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header class="top">
+		<div class="col-xs-2">
+		<%= link_to root_path, :class => 'logo' do %>
+			<% image_tag("logo.png", height: '50') %>
+		<% end %>
+		</div>
+		<div class="col-xs-7 hidden-xs slogan">
+			Splurting out feels and kind words from the Leadnow community to remind you all why we're doing this in the first place...
+		</div>
+		<div class="col-xs-3 links">
+			<!-- Button trigger modal -->
+      		<%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+      		&nbsp;&nbsp;
+			<%= link_to 'About', about_path %>
+		</div>
+	</header>
+
+
+
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
+        </div>
+        <%= simple_form_for Quote.new do |f| %>
+        <div class="modal-body col-xs-12">
+			<%= f.input :saying, as: :text, :label => "What is the nice saying from the community that you want to add?", :placeholder => "Leadnow is the best! Happy happy doge doge" %>
+            <br />
+            <%= f.input :author, :label => "Provide some context for this quote. For which campaign and when was this said? (For privacy purposes, please do not include names)", :placeholder => "e.g. Vote Together. October 2015"%>
+        </div>
+		<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <%= f.submit 'Add Quote', :class => 'btn btn-danger' %>
+        </div>
+          <% end %>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 	<hr />
+	<br class="clear" />
+	<div class="content">
+		<div class="container">
+			<% if flash[:error].present? %>
+				<div class="col-xs-10 col xs-offset-1 alert alert-danger">
+					<%= flash[:error].html_safe %>
+				</div>
+				<br clear="all" /><br />
+			<% end %>
+			<span class="quote"><%= yield %></span>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="col-xs-12 col-sm-6">
+				<%= link_to "This isn't enough, I need more feels!", root_path, :class => 'next-quote' %>
+			</div>
+			<div class="col-xs-12 col-sm-6 footer-blurb">Proudly hacked in Toronto by danielle&nbsp;&nbsp;@  <a target="_blank" href="http://www.leadnow.ca"><img src="https://d2kr46l0s744cg.cloudfront.net/static/images/leadnow-white.png" height="25"></a>
+			</div> 
+			</div>
+		</div>
+	</div>
+</body>
+</html>

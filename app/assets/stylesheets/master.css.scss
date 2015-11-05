@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic);
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+
+.top {
+  padding-top: 22px;
+  color: #f2f2f2;
+}
+
+body {
+  background: #332D3B;
+}
+
+.content {
+  background-image: url('https://d2k9zd9wfpf2tw.cloudfront.net/wp-content/themes/leadnow-2014/images/about_background.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  height: 100%;
+  padding-top: 75px;
+}
+
+.clear, hr {
+	clear: both;
+}
+
+.slogan {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.about-box {
+    opacity: 0.5;
+    background: #bbb;
+    padding: 10px;
+    color: #332D3B;
+    border-radius: 9px;
+    margin-top: -35px;
+    font-family: "Palatino Linotype", Georgia, serif;
+    font-size: 18px;
+}
+
+.links {
+	padding-top: 26px;
+}
+
+.slogan {
+  padding-top: 28px;
+}
+
+.links a {
+  color: #E4B883;
+	font-size: 25px;
+	border-bottom: 1px dotted #dfdfdf;
+	font-family: 'Arvo', sans-serif;
+	font-weight: bold;
+}
+
+header {
+	border-top: 9px solid #00AEEF;
+}
+
+h1 {
+	font-family: 'Slabo 27px', serif;
+	font-size: 36px;
+}
+
+h2, .modal {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h2 p span {
+  color: #E4B883;
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 p {
+  color: #ddd;
+  font-size: 20px;
+}
+
+.next-quote {
+	color: #E4B883;
+	font-family: 'Arvo', serif;
+	font-size: 20px;
+}
+
+.footer-blurb {
+	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  text-align: right;
+  font-size:16px;
+  color: #ffffff;
+  padding-top:10px;
+}
+
+.logo:hover {
+	text-decoration:none;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+::selection {
+  background-color: #663D96;
+  color: white;
+}
+
+.quote {
+  color: #f2f2f2;
+}
+
+.highlight {
+  color: #00AEEF;
+  font-family: "Arvo", sans-serif;
+  text-align: center;
+}
